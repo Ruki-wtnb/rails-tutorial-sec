@@ -1,3 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# bundle exec ridgepole --config config/database.yml --env development --file db/Schemafile --apply 
+
+Dir.glob("db/schemas/*.rb").each do |file|
+  instance_eval(File.read(file))
+end

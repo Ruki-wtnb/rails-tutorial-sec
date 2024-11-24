@@ -101,6 +101,9 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 RSpec.configure do |config|
+  # FactoryBotで省略形を使うための設定
+  config.include FactoryBot::Syntax::Methods
+
   config.include ActiveSupport::Testing::TimeHelpers 
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
