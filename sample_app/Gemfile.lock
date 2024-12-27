@@ -170,9 +170,11 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
-    pry (0.15.0)
+    pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    pry-nav (1.0.0)
+      pry (>= 0.9.10, < 0.15)
     pry-rails (0.3.11)
       pry (>= 0.13.0)
     public_suffix (6.0.1)
@@ -339,6 +341,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   listen (~> 3.3)
+  pry-nav
   pry-rails
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
